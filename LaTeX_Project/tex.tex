@@ -9,6 +9,12 @@
 \usepackage{hyperref}
 \usepackage{ulem}
 \usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{wasysym}
+
+\DeclareCaptionType{equ}[][]
+%\captionsetup[equ]{labelformat=empty}
 
 \hypersetup{
     colorlinks=true,
@@ -35,7 +41,7 @@
 	\newpage	
 	\section{Wstęp!}
 	\label{sec:wstep}
-		Czym tak właściwie jest praca o tajemniczym tytule "Wind is Coming"? Jest to praca 		o najwspanialszym \sout{(oczywiście zaraz po spaniu na czas i wyjadaniu Nutelli ze 		słoika)} sporcie na świecie! Ale może dość słodzenia, przejdzmy do konkretów!
+		Czym tak właściwie jest praca o tajemniczym tytule "Wind is Coming"? Jest to praca o najwspanialszym \sout{(oczywiście zaraz po spaniu na czas i wyjadaniu Nutelli ze słoika)} sporcie na świecie! Ale może dość słodzenia, przejdzmy do konkretów!
 		\newline
 	
 		\begin{figure}[h]
@@ -45,52 +51,159 @@
 		\end{figure}
 	
 	\subsection{ALE O CZYM MOWA?}
-		No właśnie, tytuł naszej ,,subsekcji'' daje do myślenia. O czym mowa? Mniej więcej 		o tym co akurat przyjdzie mi do głowy tj: wszystko i nic. A właściwie to o 					Kitesurfingu, który jest sportem extremalnym, dlatego może nie będę się za bardzo 			rozwijał bo się ludziom spodoba i jeszcze sobie krzywdę zrobią\dots
+		No właśnie, tytuł naszej ,,subsekcji'' daje do myślenia. O czym mowa? Mniej więcej o tym co akurat przyjdzie mi do głowy tj: wszystko i nic. A właściwie to o Kitesurfingu, który jest sportem extremalnym, dlatego może nie będę się za bardzo rozwijał bo się ludziom spodoba i jeszcze sobie krzywdę zrobią\dots
 	
 	
 	\subsection{Podwstęp}
-		Tak by wyszło właśnie\dots \space że Kiteboarding to taki \uline{podwstęp}. Sam 			jestem tego najlepszym przykładem, wysłany jako 10 latek na kurs. To nie to co 				myślicie, rodzice po prostu mieli mnie dość i chcieli odpocząć, więc postanowili 			\textit{się mnie pozbyć} na jakiś czas. No i się im to zaje\dots fajnie udało. 				Niczego nieświadomy, niespełna sięgający ponad stół Kasper zrozumiał czym jest 				ADRENALINA. Tak zaczęła się moja jak do tej pory 12 letnia przygoda z wodą, 				wiatrem, alkoholem i imprezami. Ale to chyba nie ten rozdział, więc zapraszam cię 			mój drogi czytelniku do czytania dalej. W przypadku gdy nie zrozumiałeś co miałem 			na myśli, cofnij się proszę do \hyperref[sec:wstep]{wstępu}.
+		Tak by wyszło właśnie\dots \space że Kiteboarding to taki \uline{podwstęp}. Sam jestem tego najlepszym przykładem, wysłany jako 10 latek na kurs. To nie to co myślicie, rodzice po prostu mieli mnie dość i chcieli odpocząć, więc postanowili \textit{się mnie pozbyć} na jakiś czas. No i się im to zaje\dots fajnie udało. Niczego nieświadomy, niespełna sięgający ponad stół Kasper zrozumiał czym jest ADRENALINA. Tak zaczęła się moja jak do tej pory 12 letnia przygoda z wodą, wiatrem, alkoholem i imprezami. Ale to chyba nie ten rozdział, więc zapraszam cię mój drogi czytelniku do czytania dalej. W przypadku gdy nie zrozumiałeś co miałem na myśli, cofnij się proszę do \hyperref[sec:wstep]{wstępu}.
 		
 	\section{Historia}
 	
-	\begin{figure}[h]
+		\begin{figure}[h]
 			\centering
 			\includegraphics[width=\textwidth]{tvpHistoria}
-			\caption{Chyba nie do końca o to chodziło z historią, ale był to pierwszy 					obrazek po wpisaniu ,,Historia'' w wujka googla. (Chyba powinienem też pisać 				krótsze opisy moich obrazków, co uważasz czytelniku?}
+			\caption{Chyba nie do końca o to chodziło z historią, ale był to pierwszy obrazek po wpisaniu ,,Historia'' w wujka googla. (Chyba powinienem też pisać krótsze opisy moich obrazków, bo robi się to okrutnie nieczytelne na moim dokumencie napisanym w \LaTeX)}
 		\end{figure}
 	
 	\subsection{Początek}
-		Jak już wcześniej wspomniałem. Zapisany na kurs aby zapewnić spokój rodzicom. Nie 			trwało to jednak długo, bo aż 4 godziny. Z tego co pamiętam były to 2 sesje po 2h, 		nie jestem na 100\% pewny, bo bałem się zapytać mojej pani instruktor ile czasu 			byłem na wodzie, więc są to tylko domysły 10 latka. Na szczęście wakacje się 				kończyły i zdążyłem wrócić do szkoły zanim spróbowałem kite jeszcze raz! Po 				\sout{cholernie} bardzo ciężkim roku szkolnym, w którym męczyłem się z przyrką i 			majzą nadszedł czas kolejnych wakacji. Cieszyłem się jak głupi do sera! Nie no 				spokojnie nie na myśl o kajcie, tylko o tym, że nie będę musiał przez 2 miesiące 			oglądać tego aresztu dla nieletnich. Finalnie jak się domyślasz znów wylądowałem 			na wodzie, a właściwie to pod nią i to nie raz.
+		Jak już wcześniej wspomniałem. Zapisany na kurs aby zapewnić spokój rodzicom. Nie trwało to jednak długo, bo aż 4 godziny. Z tego co pamiętam były to 2 sesje po 2h, nie jestem na 100\% pewny, bo bałem się zapytać mojej pani instruktor ile czasu byłem na wodzie, więc są to tylko domysły 10 latka. Na szczęście wakacje się kończyły i zdążyłem wrócić do szkoły zanim spróbowałem kite jeszcze raz! Po \sout{cholernie} bardzo ciężkim roku szkolnym, w którym męczyłem się z przyrką i majzą nadszedł czas kolejnych wakacji. Cieszyłem się jak głupi do sera! Nie no spokojnie nie na myśl o kajcie, tylko o tym, że nie będę musiał przez 2 miesiące oglądać tego aresztu dla nieletnich. Finalnie jak się domyślasz znów wylądowałem na wodzie, a właściwie to pod nią i to nie raz.
 	
 	\subsection{Pierwsze ślizgi}
 	
-		Już już spokojnie! Udało się! popłynąłem! To był wielki krok dla mnie a jeszcze 			większy dla moich rodziców?! Od teraz dawałem im spokój na jeszcze dłużej, bo nie 			byłem w stanie pływać tak, aby wracać do miejsca w którym zaczynałem. Wiązało się 			to z tym, że idąc pływać - wracałem po jakiś 5 godzinach. Około 1,5h pływania a 			reszta czasu na marsz wzdłuż półwyspu helskiego prosto do przyczepy kempingowej 			dziadka.  
+		Już już spokojnie! Udało się! popłynąłem! To był wielki krok dla mnie a jeszcze większy dla moich rodziców?! Od teraz dawałem im spokój na jeszcze dłużej, bo nie byłem w stanie pływać tak, aby wracać do miejsca w którym zaczynałem. Wiązało się to z tym, że idąc pływać - wracałem po jakiś 5 godzinach. Około 1,5h pływania a reszta czasu na marsz wzdłuż półwyspu helskiego prosto do przyczepy kempingowej dziadka. Z czasem zaczęło to wyglądać coraz lepiej. Chociaż nie ukrywam, że zanim doszedłem do etapu samodzielności i radzenia sobie w 80\% z przypadkami które mi się zdarzały, to zebrałem tyle glonów zębami, że aż polubiłem shushi. 
 	
 	\subsection{Pierwszy alkohol}	
-	
+			
+		Oczywiście, że tak! Mogłeś się tego domyślić mój drogi czytelniku. Życie surfera to nie tylko sport, sport, sport, życie surfera to także imprezy i alkohol. W moim przypadku było inaczej, raczej coś jak: Dwóch 16 latków, jeden redd's, nieskończona żenada. No przynajmniej z tego co pamiętam to chociaż smaczny był. Zawsze mogłem trafić na jakiegoś taniego, ciepłego browara w cenie 1,65 za puszkę 0,5l. No ale jakby nie patrzeć to zawsze grzeczny byłem, więc nigdy więcej się takie incydenty nie zdarzały.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[]{redds}
+			\caption{Sprawca całego zamieszania, pamiętny redds}
+		\end{figure}
+		
 	\subsection{Pierwsza praca}
 	
-	\subsection{Pierwsze narkotyki}
+	Właściwie to nie wiem który podrozdział powinien pojawić się pierwszy alkohol czy praca. Mowa oczywiście o chronologii! Przyjmijmy więc, że epizody te są umieszczone równolegle na linii czasu i dzieją się niezależnie, ale nadal równolegle. Pracę załatwiła mi mama (no o ile robienie najnudniejszej, najżmudniejszej, najgorszej i niechcianej roboty za darmo można nazwać pracą). Ale nie ma co narzekać po jednych wakacjach jako niewolnik awansowałem na dumnie brzmiące stanowisko \textbf{\uline{,,Młodszego Instruktora''}}. Nadal robiłem czarną robotę i dostawałem pieniądze wg wzoru: 
 	
-	\newpage
+	\begin{eqnarray}
+		\frac{najnizsza.krajowa}{wymagania.szefa}*\int_{poczatek.wakacji}^{koniec.wakacji}{krew*pot*lzy \; \; \mathrm{d} krew}
+	\end{eqnarray}
+	
+	Ale! Ale byłem instruktorem, uczyłem ludzi tego co sam kocham i dostawałem za to pieniądze! Przy okazji miałem możliwośc pływania na \sout{starych, zniszczonych latawcach na których uczyli się moi kursanci}! No okej miałem swój sprzęt, nie było dramatu.
+	
+	\subsection{Kolejna Praca}
+	Po 2 latach pracy jako pół intruktor, pół dzieciak od czarnej roboty udało mi się znaleźć pracę w innej szkółce. Bunkrów nie było, ale też było fajnie. Pracowałem z ludźmi mającymi ogromne doświadczenie i niesamowicie dużo się od nich nauczyłem (odniosłem też wrażenie, że doświadczenie rośnie wraz z ilością alkoholu, który człowiek jest w stanie przyjąć\dots \space no cóż). W kolejne wakacje szkółkę przęli nowi właściciele, którzy zorganizowali dla nas międzynarodowy kurs instruktorski IKO - Międzynarodowej organizacji kitesurfingu. Podniosłem swoje kwalifikacje i rok później zostałem kierownikiem szkółki.
+	
+	\begin{figure}[h]
+			\centering
+			\includegraphics[scale=0.2]{iko}
+			\caption{Podobno logo IKO, nawet nasz szkoleniowiec nie był pewny jak wygląda}
+		\end{figure}
+	
+	\subsection{Kolejna praca, większa odpowiedzialność}
+	Co tu dużo pisać, zajęty byłem mocno. Jak to w tym \href{https://www.computerworld.pl/felieton/Pusta-taczka,298952.html}{żarcie} opowiadają, nie miałem czasu ładować taczki. Bardzo dużo zajmowałem się tabelkami takimi jak ta:
+	
+	
+	\begin{table}[!ht]
+		\centering
+		\begin{tabular}{llll}
+Data    & Kursant          & Kurs         & Czas  \\
+6/19/17 & Aga              & IKO2 ind     & 2     \\
+6/24/17 & Basia, Jagoda    & IKO 3? ind   & 2     \\
+7/5/17  & Dorota           & IKO 1 ind    & 2     \\
+7/7/17  & Paweł, Agnieszka & IKO 1/2 ind  & 1.5   \\
+7/9/17  & Filip            & IKO 2 ind    & 1.5   \\
+7/9/17  & Dobromir         & IKO 2/3 ind  & 1.5   \\
+7/11/17 & Emma             & IKO 1 ind    & 3.5   \\
+7/13/17 & Patryk           & IKO 3 ind    & 2     \\
+7/15/17 & Paweł            & IKO 1 ind    & 2     \\
+7/16/17 & Paweł            & IKO 1 ind    & 2     \\
+7/17/17 & Dorian           & IKO 4 ind    & 1.5   \\
+7/22/17 & Kuba, Darek      & IKO 1 ind    & 3     \\
+6/27/17 & Kuba, Darek      & IKO 1 ind    & 2     \\
+8/2/17  & fabian           & iko 2/3 ind  & 2     \\
+8/4/17  & Fabian           & Iko 2/3 ind  & 2     \\
+8/5/17  & Michał           & IKO 3 ind    & 4     \\
+8/7/17  & Sara             & Iko 3 ind    & 2     \\
+8/7/17  & mieszko          & iko 1 ind    & 1     \\
+8/8/17  & Leszek           & Iko 1 ind    & 2     \\
+8/8/17  & Jacek            & iko 3 ind    & 2     \\
+8/9/17  & leszek           & iko 2 ind    & 1.5   \\
+8/15/17 & Daria            & iko 3 ind    & 3.5   \\
+8/15/17 & michał           & iko 3 ind    & 2     \\
+8/15/17 & marcin kuba      & iko 3 ind    & 2     \\
+8/16/17 & Jacek            & iko 3 ind    & 1     \\
+8/19/17 & Aga              & Iko 1 ind    & 1     \\
+8/19/17 & Paweł            & Iko 2 ind    & 1.5   \\
+8/19/17 & rosolak          & iko 3 ind    & 1     \\
+8/29/17 & HUBI             & szalony kurs & 1     \\
+8/30/17 & HUBI             & szalony kurs & 1.5   \\
+9/1/17  & Grzegorz         & iko 3 ind    & 1.5   \\
+9/1/17  & Szymon           & iko 3 ind    & 0.5   \\
+9/15/17 & grzegorz         & Iko 2 ind    & 0.5  
+		\end{tabular}
+	\caption{Tabela sam nie wiem czego, kiedyś pamiętałem}
+	\end{table}
+	
+	na moje szczęśćie ominęły mnie wzory takie jak te: 
+	
+	\begin{eqnarray}
+			f(x) &= x^2\\
+  			g(x) &= \frac{1}{x}\\
+  			F(x) &= \int^a_b \frac{1}{3}x^3
+	\end{eqnarray}
+	
+	\begin{equ}[!ht]
+	\begin{equation} 
+	\begin{split}
+	T_v(s) & = \frac{V_{dc}(s)}{V_{dcref}(s)} = \frac{\omega _B}{B}
+	\frac{k_{pdc}s + k_{idc}} {s^2 + \frac{ k_{pdc} \omega _B s} {B} +
+	\frac{k_{idc} \omega _B} {B}} \\% 
+	T_i(s) & = \frac{V_{dc}(s)}{i_{l}(s)} = - \frac{\omega _B}{B} \frac{s} {s^2
+	+ \frac{ k_{pdc} \omega _B s} {B} + \frac{k_{idc} \omega _B} {B}}
+	\end{split}
+	\end{equation}
+	\caption{No tu się muszę przyznać, znalazłem tę (5) kozę w internecie}
+	\end{equ}
+	
+	\section{CheckLista}
+	
+	\begin{itemize}
+	\item \makebox[1.5cm]{}Przedstawić o czym będzie praca \CheckedBox
+	\item \makebox[1.5cm]{}Pogadać o nutelli \CheckedBox
+	\item \makebox[1.5cm]{}Opowiedzieć historię swojego życia \CheckedBox
+	\item \makebox[1.5cm]{}Użyć trochę niezrozumiałych kiteboardingowych słów \CheckedBox
+	\item \makebox[1.5cm]{}Wyłumaczyć czytelnikowi czym jest Kitesurfing\dots \space Oh\dots \space wait\dots
+	\end{itemize}
+	
+	\section{Czym Jest Kitesurfing?}
+	Kitesurfing (także kiteboarding) – sport wodny, polegający na poruszaniu się po wodzie na desce lub hydroskrzydle (foil) z pomocą pędnika - latawca (kite).
+
+Sport ten uprawiany jest zarówno na akwenach słodkowodnych (sprzyjające wiatry wieją m.in. w dolinach alpejskich, np. w Południowym Tyrolu), jak i morskich (np. na polskim wybrzeżu Bałtyku).
+
+Od igrzysk letnich w Rio de Janeiro w 2016 roku kitesurfing miał dołączyć do konkurencji żeglarskich, zastępując tym samym windsurfing. Jednak decyzją światowej federacji żeglarskiej ISAF dnia 10.11.2012 r. został skreślony z listy konkurencji na olimpiadzie w Rio na rzecz RS:X.
+	
 	\addcontentsline{toc}{section}{\listfigurename}
 	\listoffigures
-	\newpage
 	\addcontentsline{toc}{section}{\listtablename}
 	\listoftables
-	\newpage
 
 	
 	\begin{thebibliography}{9}
 		\bibitem{overleaf.com} 
-		\href{https://www.overleaf.com/learn/latex/Inserting_Images}{overleaf.com 			Inserting Images}, \href{https://www.overleaf.com/learn/latex/Hyperlinks}{overleaf.com 			Hyperlinks} Autor nieznany, 2019.
+		\href{https://www.overleaf.com/learn/latex/Inserting_Images}{overleaf.com Inserting Images}, \href{https://www.overleaf.com/learn/latex/Hyperlinks}{overleaf.com Hyperlinks} Autor nieznany, 2019.
 		
 		\bibitem{pakietomat.wordpress.com} 
 		\href{https://pakietomat.wordpress.com/tag/przekreslenia/}{Pakietomat przekreślenia}, Zofia Walczak, 2013.
 		
+		\bibitem{Wikipedia.org} 
+		\href{https://pl.wikipedia.org/wiki/Kitesurfing}{Wikipedia Kitesurfing}, Gal Anonim, 2019.
+		
 		\bibitem{NAJWSPANIALSZY} 
 		Wiedza własna nabyta przez lata doświadczeń w kitesurfingu, Kasper 'Kaspi' Kankowski, 2019.
-
+		
+		
 		
 	\end{thebibliography} 
 \end{document}
