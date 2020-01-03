@@ -12,9 +12,11 @@
 \usepackage{amsmath}
 \usepackage{caption}
 \usepackage{wasysym}
+\usepackage{sectsty}
+\usepackage{multicol}
+\sectionfont{\clearpage}
 
 \DeclareCaptionType{equ}[][]
-%\captionsetup[equ]{labelformat=empty}
 
 \hypersetup{
     colorlinks=true,
@@ -56,7 +58,7 @@
 	
 	\subsection{Podwstęp}
 		Tak by wyszło właśnie\dots \space że Kiteboarding to taki \uline{podwstęp}. Sam jestem tego najlepszym przykładem, wysłany jako 10 latek na kurs. To nie to co myślicie, rodzice po prostu mieli mnie dość i chcieli odpocząć, więc postanowili \textit{się mnie pozbyć} na jakiś czas. No i się im to zaje\dots fajnie udało. Niczego nieświadomy, niespełna sięgający ponad stół Kasper zrozumiał czym jest ADRENALINA. Tak zaczęła się moja jak do tej pory 12 letnia przygoda z wodą, wiatrem, alkoholem i imprezami. Ale to chyba nie ten rozdział, więc zapraszam cię mój drogi czytelniku do czytania dalej. W przypadku gdy nie zrozumiałeś co miałem na myśli, cofnij się proszę do \hyperref[sec:wstep]{wstępu}.
-		
+	
 	\section{Historia}
 	
 		\begin{figure}[h]
@@ -66,7 +68,7 @@
 		\end{figure}
 	
 	\subsection{Początek}
-		Jak już wcześniej wspomniałem. Zapisany na kurs aby zapewnić spokój rodzicom. Nie trwało to jednak długo, bo aż 4 godziny. Z tego co pamiętam były to 2 sesje po 2h, nie jestem na 100\% pewny, bo bałem się zapytać mojej pani instruktor ile czasu byłem na wodzie, więc są to tylko domysły 10 latka. Na szczęście wakacje się kończyły i zdążyłem wrócić do szkoły zanim spróbowałem kite jeszcze raz! Po \sout{cholernie} bardzo ciężkim roku szkolnym, w którym męczyłem się z przyrką i majzą nadszedł czas kolejnych wakacji. Cieszyłem się jak głupi do sera! Nie no spokojnie nie na myśl o kajcie, tylko o tym, że nie będę musiał przez 2 miesiące oglądać tego aresztu dla nieletnich. Finalnie jak się domyślasz znów wylądowałem na wodzie, a właściwie to pod nią i to nie raz.
+		Jak już wcześniej wspomniałem. Zapisany na kurs aby zapewnić spokój rodzicom. Nie trwało to jednak długo, bo aż 4 godziny. Z tego co pamiętam były to 2 sesje po 2h, nie jestem na 100\% pewny, bo bałem się zapytać mojej pani instruktor ile czasu byłem na wodzie, więc są to tylko domysły 10 latka. Na szczęście wakacje się kończyły i zdążyłem wrócić do szkoły zanim spróbowałem kite jeszcze raz! Po \sout{cholernie} bardzo ciężkim roku szkolnym, w którym męczyłem się z przyrką i majzą nadszedł czas kolejnych wakacji. Cieszyłem się jak głupi do sera! Nie no spokojnie nie na myśl o kajcie, tylko o tym, że nie będę musiał przez 2 miesiące oglądać tego aresztu dla nieletnich. Finalnie jak się domyślasz znów wylądowałem na wodzie, a właściwie to pod nią i to nie raz. \cite{wiedza_wlasna}
 	
 	\subsection{Pierwsze ślizgi}
 	
@@ -102,10 +104,10 @@
 		\end{figure}
 	
 	\subsection{Kolejna praca, większa odpowiedzialność}
-	Co tu dużo pisać, zajęty byłem mocno. Jak to w tym \href{https://www.computerworld.pl/felieton/Pusta-taczka,298952.html}{żarcie} opowiadają, nie miałem czasu ładować taczki. Bardzo dużo zajmowałem się tabelkami takimi jak ta:
+	Co tu dużo pisać zostałem osobą odpowiedzialną za instruktorów, poziom szkolenia i sprzęt, zajęty byłem mocno. Jak to w tym \href{https://www.computerworld.pl/felieton/Pusta-taczka,298952.html}{żarcie} opowiadają, nie miałem czasu ładować taczki. Bardzo dużo zajmowałem się tabelkami takimi jak tabela nr: \ref{table:tablica} lub \ref{table:tablica2}
 	
 	
-	\begin{table}[!ht]
+	\begin{table}[]
 		\centering
 		\begin{tabular}{llll}
 Data    & Kursant          & Kurs         & Czas  \\
@@ -131,20 +133,30 @@ Data    & Kursant          & Kurs         & Czas  \\
 8/8/17  & Jacek            & iko 3 ind    & 2     \\
 8/9/17  & leszek           & iko 2 ind    & 1.5   \\
 8/15/17 & Daria            & iko 3 ind    & 3.5   \\
-8/15/17 & michał           & iko 3 ind    & 2     \\
-8/15/17 & marcin kuba      & iko 3 ind    & 2     \\
-8/16/17 & Jacek            & iko 3 ind    & 1     \\
-8/19/17 & Aga              & Iko 1 ind    & 1     \\
-8/19/17 & Paweł            & Iko 2 ind    & 1.5   \\
-8/19/17 & rosolak          & iko 3 ind    & 1     \\
-8/29/17 & HUBI             & szalony kurs & 1     \\
-8/30/17 & HUBI             & szalony kurs & 1.5   \\
-9/1/17  & Grzegorz         & iko 3 ind    & 1.5   \\
-9/1/17  & Szymon           & iko 3 ind    & 0.5   \\
-9/15/17 & grzegorz         & Iko 2 ind    & 0.5  
+8/15/17 & michał           & iko 3 ind    & 2     
 		\end{tabular}
+		
 	\caption{Tabela sam nie wiem czego, kiedyś pamiętałem}
+	\label{table:tablica}
 	\end{table}
+	
+	\begin{table}[]
+	\centering
+	\begin{tabular}{lllll}
+	data       & czas & woda/wyciąg \\
+	24-07-2017 & 3    & Ląd         \\
+	25-07-2017 & 2    & Woda        \\
+	26-07-2017 & 1    & Woda        \\
+	03-07-2017 & 1    & Ląd         \\
+	23-07-2017 & 1    & Ląd         \\
+	29-07-2017 & 0,5  & Ląd         \\
+	30-07-2017 & 1    & Woda        \\
+	17-08-2017 & 0,5  & Ponton            
+\end{tabular}
+\caption{Tabela obsługi wake jednego z instruktorów}
+\label{table:tablica2} 
+\end{table}
+	
 	
 	na moje szczęśćie ominęły mnie wzory takie jak te: 
 	
@@ -154,19 +166,9 @@ Data    & Kursant          & Kurs         & Czas  \\
   			F(x) &= \int^a_b \frac{1}{3}x^3
 	\end{eqnarray}
 	
-	\begin{equ}[!ht]
-	\begin{equation} 
-	\begin{split}
-	T_v(s) & = \frac{V_{dc}(s)}{V_{dcref}(s)} = \frac{\omega _B}{B}
-	\frac{k_{pdc}s + k_{idc}} {s^2 + \frac{ k_{pdc} \omega _B s} {B} +
-	\frac{k_{idc} \omega _B} {B}} \\% 
-	T_i(s) & = \frac{V_{dc}(s)}{i_{l}(s)} = - \frac{\omega _B}{B} \frac{s} {s^2
-	+ \frac{ k_{pdc} \omega _B s} {B} + \frac{k_{idc} \omega _B} {B}}
-	\end{split}
-	\end{equation}
-	\caption{No tu się muszę przyznać, znalazłem tę (5) kozę w internecie}
-	\end{equ}
 	
+	
+
 	\section{CheckLista}
 	
 	\begin{itemize}
@@ -182,28 +184,56 @@ Data    & Kursant          & Kurs         & Czas  \\
 
 Sport ten uprawiany jest zarówno na akwenach słodkowodnych (sprzyjające wiatry wieją m.in. w dolinach alpejskich, np. w Południowym Tyrolu), jak i morskich (np. na polskim wybrzeżu Bałtyku).
 
-Od igrzysk letnich w Rio de Janeiro w 2016 roku kitesurfing miał dołączyć do konkurencji żeglarskich, zastępując tym samym windsurfing. Jednak decyzją światowej federacji żeglarskiej ISAF dnia 10.11.2012 r. został skreślony z listy konkurencji na olimpiadzie w Rio na rzecz RS:X.
+Od igrzysk letnich w Rio de Janeiro w 2016 roku kitesurfing miał dołączyć do konkurencji żeglarskich, zastępując tym samym windsurfing. Jednak decyzją światowej federacji żeglarskiej ISAF dnia 10.11.2012 r. został skreślony z listy konkurencji na olimpiadzie w Rio na rzecz RS:X. \cite{kitesurf_wiki}
+
+\begin{multicols}{2}
+[
+\section{Czy Kiteboarding może być bezpieczny?}
+Bezpieczeństwo jest odwrotnością zagrożenia. Postrzegane jest ono jako stan, który charakteryzuje się niskim
+poziomem ryzyka utraty czegoś szczególnie cennego – życia, zdrowia, pracy, szacunku, uczuć, dóbr materialnych lub
+niematerialnych, itp. Dając człowiekowi poczucie pewności jest jedną z podstawowych potrzeb w piramidzie Maslowa.
+Niniejsza praca stanowi fragment obszernych badań związanych z bezpieczeństwem w różnych obszarach kultury fizycznej.
+Problematyka bezpieczeństwa ma szczególną rangę w takich formach aktywności, w których zagrożenia dla życia i zdrowia
+uczestników jest bardzo duże. 
+]
+Jedną z takich form, jest kitesurfing, który jako dyscyplina sportu został właśnie włączony do programu Igrzysk
+Olimpijskich w Paryżu 2024. „Mimo, iż pierwsze doniesienia o wykorzystaniu latawców do napędu łódek sięgają aż kilkuset
+lat przed naszą erą, to jednak dopiero na początku XIX wieku chęć wykorzystania latawca nabrała dynamiki. Historia
+kitesurfingu jest stosunkowo krótka, ale bardzo bogata” [2].
+Kitesurfingu nie można dziś pomijać, mówiąc o sportach wodnych. O ile jeszcze kilka lat temu, latawce pojawiały się
+na kilku akwenach, o tyle dziś, w wietrzny dzień, stanowią pokaźny procent użytkowników każdego spotu.
+O jego popularności decyduje wiele czynników. Podobnie jak niegdyś np. snowboard, jest bardzo widowiskowy –
+zaliczany do grupy sportów ekstremalnych (choć dzięki postępom w konstrukcji sprzętu jest dziś bardzo bezpieczny), dla
+osób oglądających oraz pływających kitesurferów dostarcza wielu emocji. Oprócz tego, jest tą formą rekreacji, którą można
+bardzo szybko opanować - średnio na naukę do poziomu pływania w ślizgu potrzeba 2 dni nauki.
+„Specyfika kitesurfingu polega również na mobilności – latawiec wraz z osprzętem można łatwo spakować do
+plecaka, deskę chwycić dłoń i bez problemu się przemieszczać, co nie jest takie proste w przypadku wielu innych sportów
+wodnych”[3].
+Dodatkowo wprowadza on trzeci wymiar a więc możliwość wzbijania się w powietrze i pozostawania nad wodą
+czasami przez kilkanaście sekund.
+Rynek kitesurfingowy w Polsce rozwinął się bardzo mocno na przestrzeni ostatnich 10 lat.
+Nad polskim morzem powstało wiele szkół nauczających kitesurfingu - w lecie 2018 roku było ich ponad 60.
+Według danych szacunkowych, w ostatnim sezonie letnim w każdej ze szkół nauczyło się pływać średnio 200 osób, co
+w podsumowaniu tylko 3 ostatnich lat liczbę nowych osób (uczących się – wchodzących do tego sportu) w kitesurfingu
+w Polsce określa na około 35000. Należy wziąć pod uwagę fakt, iż część osób uczy się kitesurfingu sama, część zaś korzysta
+z kursów podczas wypraw do ciepłych krajów.
+Zainteresowanie kitesurfingiem rośnie bardzo mocno z roku na rok, co oznacza, że w kolejnych latach liczba
+zainteresowanych nauką będzie coraz większa.
+O wzroście popularności tego sportu świadczyć mogą następujące fakty, iż poza granicami Polski powstały już
+polskie bazy-szkoły kitesurfingowe: Tarifa, El Gouna (Egipt), Rodos, Paros (Grecja) a wielu Polaków naucza kitesurfingu m.in.
+na Cabarete, Cape Town. ~\cite{wiesner2018zarzkadzanie}
+\end{multicols}
 	
+	\newpage
 	\addcontentsline{toc}{section}{\listfigurename}
 	\listoffigures
 	\addcontentsline{toc}{section}{\listtablename}
 	\listoftables
-
 	
-	\begin{thebibliography}{9}
-		\bibitem{overleaf.com} 
-		\href{https://www.overleaf.com/learn/latex/Inserting_Images}{overleaf.com Inserting Images}, \href{https://www.overleaf.com/learn/latex/Hyperlinks}{overleaf.com Hyperlinks} Autor nieznany, 2019.
-		
-		\bibitem{pakietomat.wordpress.com} 
-		\href{https://pakietomat.wordpress.com/tag/przekreslenia/}{Pakietomat przekreślenia}, Zofia Walczak, 2013.
-		
-		\bibitem{Wikipedia.org} 
-		\href{https://pl.wikipedia.org/wiki/Kitesurfing}{Wikipedia Kitesurfing}, Gal Anonim, 2019.
-		
-		\bibitem{NAJWSPANIALSZY} 
-		Wiedza własna nabyta przez lata doświadczeń w kitesurfingu, Kasper 'Kaspi' Kankowski, 2019.
-		
-		
-		
-	\end{thebibliography} 
+	\newpage
+	\bibliographystyle{plain}
+	\bibliography{b}
+	
+	
+	
 \end{document}
