@@ -1,0 +1,245 @@
+body
+{
+    background-image: url(img/tlo.png);
+    background-size: cover;
+}
+
+#dokument
+{
+    width: 970px;
+    height:860px;
+    margin:10px auto;
+    font-family: Tahoma;
+}
+
+header 
+{
+    width:970px;
+    height:150px;
+    background-color: transparent;
+    background-color: rgba(0, 255, 255, 0.5);
+    border: 1px solid black;
+    position:relative;
+    margin-bottom: 10px;
+}
+
+nav {
+    position: static;
+    float: left;
+    width: 199px;
+    height: 700px;
+    background-color: transparent;
+    background-color: rgba(0, 255, 255, 0.5);
+    border: 1px solid black;
+    margin-right: 10px;
+}
+
+main
+{
+    position: static;
+    float:right;
+    width:757px;
+    height:700px;
+    background-color: transparent;
+    background-color: rgba(0, 255, 255, 0.5);
+    overflow:auto;
+    border: 1px solid black;
+}
+
+footer
+{
+    width:970px;
+    height:25px;
+	font-size: 10px;
+    text-align:center;
+    margin:10px auto;
+    padding:15px 0;
+    border:1px solid black;
+    animation:szerokosc 5s ease-in-out 0s 1 alternat backwards,
+              tlo 8s linear 0s normal forwards;
+    -webkit-animation:szerokosc 5s ease-in-out 0s 1 alternate backwards,
+                      tlo 8s linear 0s normal forwards;
+      }
+	  
+      @keyframes szerokosc
+      {
+        0% { width:400px; }
+        100% { width:970px; }
+      }
+
+      @keyframes tlo
+      {
+        0% { background-color:rgba(0,0,0,0);}
+        100% { background-color:rgba(0, 255, 255, 0.5); }
+      }
+
+      @-webkit-keyframes szerokosc
+      {
+        0% { width:400px; }
+        100% { width:970px; }
+      }
+	  
+      @-webkit-keyframes tlo
+      {
+        0% { background-color:rgba(0, 255, 255, 0); }
+        100% { background-color:rgba(0, 255, 255, 0.5); }
+      }
+}
+
+section
+{
+    margin-left: 90px;
+}
+
+img.riderzy
+{
+    height:180px;
+    margin-bottom:5px;
+    margin-left:21px;
+    border:0;
+}
+
+table.god_otw
+{
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px auto;
+}
+
+td.dni
+{
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+td.godziny
+{
+    border-right: 1px solid black;
+}
+
+.center
+{
+    text-align: center;
+}
+
+h2
+{
+    font-family:Tahoma;
+    font-weight:normal;
+    font-style:normal;
+    color:black;
+    font-size:18px;
+    text-transform:capitalize;
+    text-align:left;
+    margin: 10px;
+}
+
+form
+{
+    font-family:Tahoma;
+    font-style:normal;
+    color:black;
+    font-size:16px;
+    margin: 10px;
+}
+
+h3
+{
+    font-family:Tahoma;
+    font-weight:normal;
+    font-style:normal;
+    color:black;
+    font-size:12px;
+    text-transform:capitalize;
+    text-align:left;
+    margin: 10px;
+}
+
+ol
+{
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  font-size:20px;
+  height:20px;
+  line-height:30px;
+  width:199px;
+  text-align:center;
+  margin-left:1px;
+}
+
+ol > li 
+{
+  float:left;
+  background-color:none;
+  width:199px;
+  height:2em;
+  
+  border-bottom: 1px solid black;
+}
+
+ol a 
+{
+  display:block;
+  color:black;
+  text-decoration:none;
+  padding:0 5px;
+}
+
+ol > li > a:hover 
+{
+  color:aqua;
+}
+
+ol > li:hover 
+{
+  background-color:#EEE;
+}
+
+ol > li > ul 
+{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+ol > li:first-child 
+{
+  margin-left:0;
+}
+
+ol > li > ul > li > a 
+{
+  border-top:1px solid #FFF;
+}
+
+
+ol > li > ul > li 
+{
+  background-color:#EEE;
+}
+
+ol > li > ul > li:hover 
+{
+  background-color:#DDD;
+}
+
+ol > li > ul > li:hover a 
+{
+  color:#09C;
+}
+
+ol > li > ul 
+{
+  display:none;
+}
+
+ol > li:hover > ul 
+{
+  display:block;
+}
+
+ol > li:hover > a 
+{
+  color:#09C;
+}

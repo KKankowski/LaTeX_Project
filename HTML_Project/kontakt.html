@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="plik.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/nkb1.jpg">
+    <title>North Kiteboarding</title>
+</head>
+<body>
+    <div id="dokument">
+        <header>
+                <img src="img/naglowek.png" alt="nagłówek"/>
+        </header>
+        <nav>
+            <ol>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="wybor_deski_kite.html">Wybor sprzętu</a></li>
+                <li>
+                    <a href="produkty.html">Produkty</a>
+                    <ul>
+                        <li><a href="latawce.html">Latawce</a></li>
+                        <li><a href="deski.html">Deski</a></li>
+                        <li><a href="bary.html">Bary</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </nav>
+            <main>
+                <h1 class="center">
+                    Kontakt
+                    <br />
+                </h1>
+                <h2 class="center">Godziny, w których odbieram wiadomości:</h2>
+                    <table class="god_otw">
+                    <tr>
+                            <td class="dni">
+                                poniedziałek
+                            </td>
+                            <td class="dni">
+                                wtorek
+                            </td>
+                            <td class="dni">
+                                środa
+                            </td>
+                            <td class="dni">
+                                czwartek
+                            </td>
+                            <td class="dni">
+                                piątek/sobota/niedziela
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="godziny">
+                                10.00-20.00
+                            </td>
+                            <td class="godziny">
+                                11.00-19.00
+                            </td>
+                            <td class="godziny">
+                                9.00-21.00
+                            </td>
+                            <td class="godziny">
+                                10.00-20.00
+                            </td>
+                            <td>
+                                10.00-20.00
+                            </td>
+                        </tr>
+                    </table>
+                <h2>Kontakt z nami:</h2>
+                    <form action="mailto:nkb.klient@gmail.com" method="post">
+                        <table>
+                            <tr>
+                                <td>
+                                    Imie:
+                                </td>
+                                <td>
+                                    Nazwisko:
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="imie" />
+                                </td>
+                                <td>
+                                    <input type="text" name="nazwisko" /><br />
+                                </td>
+                            </tr>
+                        </table>
+                        Z jakiego powodu zwracasz się do nas:<br/>
+                            <input type="radio" name="czemu" value="pytanie" />Mam pytanie<br />
+                            <input type="radio" name="czemu" value="klopot" />Zgłaszam błąd na stronie<br />
+                            <input type="radio" name="czemu" value="inny" onclick="this.form.elements['nazwa2'].disabled = !this.checked" />inny:<br />
+                            <input type="text" name="nazwa2" disabled="disabled" /><br />
+                        Płeć:<br/>
+                        <input type="radio" name="płeć" value="płeć"/>K   <input type="radio" name="płeć" value="płeć" />M<br/>
+                        Dodatkowe informacje:<br />
+                        <textarea name="info" cols="40" rows="9"></textarea><br />
+                        <input type="submit" value="WYŚLIJ"/><input type="reset" value="CZYŚĆ"/>
+                    </form>
+            </main>
+     </div>
+    <footer>
+        Wykonane przez: Kasper Kankowski w celach projektowych.
+        <a href="mailto:TheKanowaty@gmail.com">Mail do mnie</a> <br>
+		<a href="http://www.northkiteboarding.com/">Tu znajdziesz więcej informacji prosto od producenta</a>
+    </footer>
+</body>
+</html>

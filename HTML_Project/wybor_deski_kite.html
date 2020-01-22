@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="plik.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/nkb1.jpg">
+    <title>North Kiteboarding</title>
+	
+	<script language="JavaScript">
+		<!--
+		function calculate() {
+			var weight = document.Form.weight.value
+			var height = document.Form.height.value
+			var len = document.Form.style.length
+			var i
+			var style=""
+			
+			
+			if(weight > 0 && height > 0){	
+				var pointer = weight/(height/100*height/100)
+				if(pointer < 18.5){
+					document.Form.size.value = "Jesteś bardzo lekki, wybierz latawiec z przedziału 7-9m2 oraz deskę nie większą niż 136cm"
+				}
+				if(pointer > 18.5 && pointer < 25){
+					document.Form.size.value = "Jesteś stereotypowym 'Kajciarzem', wybierz latawiec z przedziału 10-12m2 oraz deskę pomiędzy 138-144cm"
+				}
+				if(pointer > 25){
+					document.Form.size.value = "Nie musisz chudnąć, po prostu wybierz latawiec z przedziału 14-17m2 oraz deskę powyżej 150cm"
+				}
+			}
+			else{
+				alert("coś poszło nie tak, spróbuj ponownie")
+			}
+			
+			
+			for ( i = 0; i < len; i++) {
+				if (document.Form.style[i].checked) {
+					style = document.Form.style[i].value
+					break
+				}
+			}
+			
+			if ( style == "" ){
+				document.Form.setup.value = "Jesteś niezdecydowany bierz Jimmie oraz Rebela"
+			}
+			
+			else if ( style == "BA" ){
+				document.Form.setup.value = "Zdecydowanie bierz TS oraz Rebela"
+			}
+			
+			else if ( style == "UH" ){
+				document.Form.setup.value = "Mamy tu kocura! Bierz TS oraz Vegasa"
+			}
+			
+			else if ( style == "FB" ){
+				document.Form.setup.value = "Lubisz lewitować, bierz FoilBoarda razem z latawcem Dice"
+			}
+			
+			else if ( style == "AR" ){
+				document.Form.setup.value = "Jesteś normikiem... bierz gamblera i EVO"
+			}
+			
+		}
+		//-->
+	</script>
+	
+</head>
+<body>
+    <div id="dokument">
+        <header>
+                <img src="img/naglowek.png" alt="nagłówek"/>
+        </header>
+        <nav>
+            <ol>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="wybor_deski_kite.html">Wybor sprzętu</a></li>
+                <li>
+                    <a href="produkty.html">Produkty</a>
+                    <ul>
+                        <li><a href="latawce.html">Latawce</a></li>
+                        <li><a href="deski.html">Deski</a></li>
+                        <li><a href="bary.html">Bary</a></li>
+                    </ul>
+                </li>
+            </ol>
+        </nav>
+            <main>
+                <form name="Form">
+					Twoja waga (kg): <input type="text" name="weight" size="10"><br />
+					Twój wzrost (cm): <input type="text" name="height" size="10"><br />
+					Wybierz styl swojego pływania: <br>
+					<input type="radio" name="style" value="BA"> Big Air <br /> 
+					<input type="radio" name="style" value="UH"> Unhooked <br />
+					<input type="radio" name="style" value="AR"> Allround <br />
+					<input type="radio" name="style" value="FB"> Foil <br />
+					<input type="button" value="Dobierz mi sprzęt" onClick="calculate()"><br />
+					Najlepsze wymiary latawca i deski to:<input type="text" name="size" size="100"><br />
+					Najlepszy setup dla ciebie: <br>
+					<input type="text" name="setup" size="100"><br />
+					<input type="reset" value="Reset" />
+					
+	</form>
+            </main>
+     </div>
+    <footer>
+        Wykonane przez: Kasper Kankowski w celach projektowych.
+		<a href="mailto:TheKanowaty@gmail.com">Mail do mnie</a> <br>
+		<a href="http://www.northkiteboarding.com/">Tu znajdziesz więcej informacji prosto od producenta</a>
+    </footer>
+    
+</body>
+</html>
